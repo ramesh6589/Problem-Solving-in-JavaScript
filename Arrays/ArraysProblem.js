@@ -1,6 +1,8 @@
 // Implement binary search in java script
-var array=[1,3,4,5,8,10];
-var binarySearch= function(array,element){
+
+var BinarySearchProblem=function(){
+}
+BinarySearchProblem.prototype.binarySearch= function(array,element){
      var leftpointer=0
      var rightpointer=array.length;
       while(leftpointer<rightpointer){
@@ -17,4 +19,7 @@ var binarySearch= function(array,element){
       return false;
 
 }
-console.log(binarySearch(array,0));
+
+var array=[1,3,4,5,8,10];
+var bsp= new BinarySearchProblem();
+console.log(bsp.binarySearch(array,1));
